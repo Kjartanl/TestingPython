@@ -26,7 +26,7 @@ def calculator(): # Add, sub, multiply, divide
 
     return
 
-def print_string(): #print previously stored value
+def print_string(): #print previously stored value (if any)
     if not 'saved_string' in globals():    
         print("No string was not set!")
     else:
@@ -35,7 +35,14 @@ def print_string(): #print previously stored value
     return
 
 def compare_numbers(): # compare two numbers to find the highest
-    print("Compare Numbers")
+    print("Will now compare Numbers")
+    num1 = int(input("First num?"))
+    num2 = int(input("Second num?"))
+    
+    res = num1 if (num1 > num2) else num2 if num2 > num1 else "None of them - they are equal!"
+
+    print("The largest number was: %s" %res)
+    
     return
 
 def remove_letter(): #remove specified letter from the list
