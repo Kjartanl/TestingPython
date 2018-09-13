@@ -25,7 +25,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Logic\for_and_lists.py" />
-    <Compile Include="Logic\functions.py" />
     <Compile Include="Logic\basic_logic.py" />
     <Compile Include="Programs\ProgramWithMenu\functions.py" />
     <Compile Include="Programs\ProgramWithMenu\menu_based_program.py">
@@ -35,7 +34,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Tasks\Apprentice_Activities.py" />
-    <Compile Include="TestingPython.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="InputOutput\" />
