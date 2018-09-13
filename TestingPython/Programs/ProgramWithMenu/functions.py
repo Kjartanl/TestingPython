@@ -26,6 +26,7 @@ def calculator(): # Add, sub, multiply, divide
 
     return
 
+
 def print_string(): #print previously stored value (if any)
     if not 'saved_string' in globals():    
         print("No string was not set!")
@@ -33,6 +34,7 @@ def print_string(): #print previously stored value (if any)
         print("String was: %s" %saved_string)
 
     return
+
 
 def compare_numbers(): # compare two numbers to find the highest
     print("Will now compare Numbers")
@@ -45,6 +47,32 @@ def compare_numbers(): # compare two numbers to find the highest
     
     return
 
+
 def remove_letter(): #remove specified letter from the list
     print("Remove letter")
+
+    given_str = str(input("Enter a string"))
+    char_to_remove = str(input("Enter a letter to remove"))
+
+    char_to_remove = char_to_remove[0]
+
+    print("Char to remove is %s" %char_to_remove)
+
+    for char in given_str:
+        if char is char_to_remove:
+            pos = given_str.index(char)
+            given_str = given_str[:pos] + given_str[pos + 1 :]
+            print(given_str)
     return 
+
+
+
+
+
+
+
+
+
+
+
+
