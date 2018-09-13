@@ -1,4 +1,4 @@
-
+import operator
 
 def accept_and_store(): # Accept and store a string value
     print("Accept and store String value!")
@@ -12,16 +12,24 @@ def calculator(): # Add, sub, multiply, divide
     nr2 = int(input("Second nr? "))
     operation = input("Operation? ")
 
-    result = nr1 + nr2
-    if operation == "-":
-        result = nr1 - nr2
-    elif operation == "*":
-        result = nr1 * nr2
-    elif operation == "/":
-        result = nr1 / nr2
-    else:
+    signs = {'+': operator.add, '-': operator.sub, '*': operator.mul, '/': operator.sub }
+
+    #result = nr1 + nr2
+    #if operation == "-":
+    #    result = nr1 - nr2
+    #elif operation == "*":
+    #    result = nr1 * nr2
+    #elif operation == "/":
+    #    result = nr1 / nr2
+    #else:
+    #    print("Invalid or no operation char given; defaulting to '+'")
+    #    operation = "+"
+
+    if operation == "":
         print("Invalid or no operation char given; defaulting to '+'")
         operation = "+"
+
+    result = signs[operation](nr1,  nr2)
 
     print("nr %d %s %d = %d" %(nr1, operation, nr2, result))
 
