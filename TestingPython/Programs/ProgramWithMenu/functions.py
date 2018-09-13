@@ -12,23 +12,14 @@ def calculator(): # Add, sub, multiply, divide
     nr2 = int(input("Second nr? "))
     operation = input("Operation? ")
 
+    # Ref. to functions for maths-operations:
     signs = {'+': operator.add, '-': operator.sub, '*': operator.mul, '/': operator.sub }
-
-    #result = nr1 + nr2
-    #if operation == "-":
-    #    result = nr1 - nr2
-    #elif operation == "*":
-    #    result = nr1 * nr2
-    #elif operation == "/":
-    #    result = nr1 / nr2
-    #else:
-    #    print("Invalid or no operation char given; defaulting to '+'")
-    #    operation = "+"
 
     if operation == "":
         print("Invalid or no operation char given; defaulting to '+'")
         operation = "+"
 
+    # Call the referenced function:
     result = signs[operation](nr1,  nr2)
 
     print("nr %d %s %d = %d" %(nr1, operation, nr2, result))

@@ -13,8 +13,8 @@ def main(): # Menu goes here
         print("SELECT OPTION:")
         print("1. Accept and store string")
         print("2. Calculate")
-        print("3. Print string")
-        print("4. Compare numbers")
+        print("3. Compare numbers")
+        print("4. Print string")
         print("5. Remove letter")
         print("6. Quit")
 
