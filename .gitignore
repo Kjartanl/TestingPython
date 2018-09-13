@@ -7,6 +7,13 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+
+# User-specific files
+ *.suo
+ *.user
+ *.userosscache
+ *.sln.docstates
+
 # C extensions
 *.so
 
