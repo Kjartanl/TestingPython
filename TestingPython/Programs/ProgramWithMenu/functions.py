@@ -59,14 +59,14 @@ def remove_letter(): #remove specified letter from the list
 
     string_length = len(target_string)-1
     pos= 0
-    while pos < string_length:
+    while pos <= string_length:
         if target_string[pos] is char_to_remove:
             target_string = target_string[:pos] + target_string[pos + 1 :]
             string_length -= 1
             pos -= 1
             print(target_string) 
         pos += 1
-
+    
     return 
 
 
