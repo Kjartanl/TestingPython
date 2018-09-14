@@ -51,20 +51,23 @@ def compare_numbers(): # compare two numbers to find the highest
 def remove_letter(): #remove specified letter from the list
     print("Remove letter")
 
-    given_str = str(input("Enter a string"))
+    target_string = str(input("Enter a string"))
     char_to_remove = str(input("Enter a letter to remove"))
 
     char_to_remove = char_to_remove[0]
-
     print("Char to remove is %s" %char_to_remove)
 
-    for char in given_str:
-        if char is char_to_remove:
-            pos = given_str.index(char)
-            given_str = given_str[:pos] + given_str[pos + 1 :]
-            print(given_str)
-    return 
+    string_length = len(target_string)-1
+    pos= 0
+    while pos < string_length:
+        if target_string[pos] is char_to_remove:
+            target_string = target_string[:pos] + target_string[pos + 1 :]
+            string_length -= 1
+            pos -= 1
+            print(target_string) 
+        pos += 1
 
+    return 
 
 
 

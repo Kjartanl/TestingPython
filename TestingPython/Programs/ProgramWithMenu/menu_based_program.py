@@ -16,21 +16,30 @@ def main(): # Menu goes here
         print("3. Compare numbers")
         print("4. Print string")
         print("5. Remove letter")
-        print("6. Quit")
+        print("6. (or 'Q') Quit")
 
         inputValue = input("Menu item?") 
 
         if inputValue == "q" or inputValue  =="Q":
             break
 
-        selected_option = int(inputValue)
-        print(selected_option)
+        try:
+            selected_option = int(inputValue)
+            print(selected_option)
 
-        if(selected_option is 6):
-            break
+            selected_option -= 1
             
-        selected_option -= 1
-        list_options[selected_option]()
+            if selected_option > len(list_options):
+                continue
+
+            if(selected_option is 5):
+                break
+            
+            list_options[selected_option]()
+        except ValueError:
+            print("Invalid option selected.")
+            continue
+
     return
 
 main()
