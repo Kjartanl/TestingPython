@@ -14,3 +14,6 @@
 my_dict = {1: "a", 2: "b", 3: "c"}
 print(my_dict)
 
+print("Keys: %s" %my_dict.keys())
+
+print("Values: %s" %my_dict.values())
