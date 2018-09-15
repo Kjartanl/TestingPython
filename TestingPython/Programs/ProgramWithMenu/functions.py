@@ -66,16 +66,7 @@ def remove_letter(): #remove specified letter from the list
             pos -= 1
             print(target_string) 
         pos += 1
-    
     return 
-
-
-
-
-
-
-
-
 
 
 

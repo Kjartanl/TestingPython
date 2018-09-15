@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>0efdb2a2-abf1-4a91-86e3-f5b47c11399b</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Programs\ProgramWithMenu\menu_based_program.py</StartupFile>
+    <StartupFile>DataStructures\Lists.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,6 +21,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="DataStructures\Lists.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="InputOutput\print_format.py">
       <SubType>Code</SubType>
     </Compile>
@@ -38,6 +41,7 @@
   <ItemGroup>
     <Folder Include="InputOutput\" />
     <Folder Include="Logic\" />
+    <Folder Include="DataStructures\" />
     <Folder Include="Programs\" />
     <Folder Include="Programs\ProgramWithMenu\" />
     <Folder Include="Tasks\" />
