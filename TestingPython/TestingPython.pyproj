@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>0efdb2a2-abf1-4a91-86e3-f5b47c11399b</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>InputOutput\FileIo.py</StartupFile>
+    <StartupFile>Logic\Generators.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -35,6 +35,9 @@
     </Compile>
     <Compile Include="Logic\for_and_lists.py" />
     <Compile Include="Logic\basic_logic.py" />
+    <Compile Include="Logic\Generators.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Programs\ProgramWithMenu\functions.py" />
     <Compile Include="Programs\ProgramWithMenu\menu_based_program.py">
       <SubType>Code</SubType>
