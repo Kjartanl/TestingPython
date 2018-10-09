@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>0efdb2a2-abf1-4a91-86e3-f5b47c11399b</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>DataStructures\Lists.py</StartupFile>
+    <StartupFile>Networking\Networking_server.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -39,6 +39,8 @@
     <Compile Include="Logic\Generators.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Networking\Networking_Client.py" />
+    <Compile Include="Networking\Networking_server.py" />
     <Compile Include="Programs\ProgramWithMenu\functions.py" />
     <Compile Include="Programs\ProgramWithMenu\menu_based_program.py">
       <SubType>Code</SubType>
@@ -52,6 +54,7 @@
     <Folder Include="InputOutput\" />
     <Folder Include="Logic\" />
     <Folder Include="DataStructures\" />
+    <Folder Include="Networking\" />
     <Folder Include="Programs\" />
     <Folder Include="Programs\ProgramWithMenu\" />
     <Folder Include="Tasks\" />
