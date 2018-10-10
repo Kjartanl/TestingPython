@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>0efdb2a2-abf1-4a91-86e3-f5b47c11399b</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Networking\Networking_server.py</StartupFile>
+    <StartupFile>CoreFunctionality\Classes.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,6 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="CoreFunctionality\Classes.py" />
     <Compile Include="DataStructures\Dictionaries.py">
       <SubType>Code</SubType>
     </Compile>
@@ -28,10 +29,11 @@
     <Compile Include="DataStructures\Lists.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="InputOutput\FileIo.py">
+    <Compile Include="CoreFunctionality\Exceptions.py" />
+    <Compile Include="CoreFunctionality\FileIo.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="InputOutput\print_format.py">
+    <Compile Include="CoreFunctionality\print_format.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Logic\For_loops.py" />
@@ -51,7 +53,7 @@
     <Compile Include="Tasks\Apprentice_Activities.py" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="InputOutput\" />
+    <Folder Include="CoreFunctionality\" />
     <Folder Include="Logic\" />
     <Folder Include="DataStructures\" />
     <Folder Include="Networking\" />
