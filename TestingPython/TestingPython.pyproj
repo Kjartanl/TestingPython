@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>0efdb2a2-abf1-4a91-86e3-f5b47c11399b</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>CoreFunctionality\Classes.py</StartupFile>
+    <StartupFile>CoreFunctionality\Command_line_args.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,6 +22,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="CoreFunctionality\Classes.py" />
+    <Compile Include="CoreFunctionality\Lambdas.py" />
+    <Compile Include="CoreFunctionality\Command_line_args.py" />
     <Compile Include="DataStructures\Dictionaries.py">
       <SubType>Code</SubType>
     </Compile>

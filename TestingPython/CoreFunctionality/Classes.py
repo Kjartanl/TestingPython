@@ -15,17 +15,29 @@ MyClass.FakeAttrib = "That which should not be!"
 print("On-th-fly-attribute: %s" %MyClass.FakeAttrib)
 
 
-class my_other_class(object):
+# Note: MyOtherClass inherits from MyClass
+class MyOtherClass(MyClass):
     
     # Init is like the constructor; 
     # NB, Note "self"; a ref from the class, to itself. 
     def __init__(self, message, value):
         self.msg = message
         self.val = value
+
+    def show_stuff():
         print("The message was: %s" %self.msg)
         print("Value was: %s" %self.val)
 
-print("My other class: %s"  %my_other_class)
-print("My other class prop: %s"  %my_other_class)
 
-my_inst = my_other_class("I come in peace!", 17)
+print("-----------------")
+print("My other class: %s"  %MyOtherClass)
+print("My other class prop: %s"  %MyOtherClass)
+
+my_inst = MyOtherClass("I come in peace!", 17)
+
+print("-----------------")
+my_inst.show_stuff
+print(my_inst.msg)
+print(dir(my_inst))
+
+
