@@ -11,6 +11,9 @@
     <OutputPath>.</OutputPath>
     <Name>TestingPython</Name>
     <RootNamespace>TestingPython</RootNamespace>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments>first second</CommandLineArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -60,6 +63,7 @@
     <Folder Include="DataStructures\" />
     <Folder Include="Networking\" />
     <Folder Include="Programs\" />
+    <Folder Include="Programs\FilesAndIo\" />
     <Folder Include="Programs\ProgramWithMenu\" />
     <Folder Include="Tasks\" />
     <Folder Include="System\" />
