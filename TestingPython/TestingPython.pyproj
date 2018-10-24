@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>0efdb2a2-abf1-4a91-86e3-f5b47c11399b</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>CoreFunctionality\Command_line_args.py</StartupFile>
+    <StartupFile>Tasks\Journeyman_Activities.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -55,6 +55,7 @@
     <Compile Include="System\system_calls.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Tasks\Journeyman_Activities.py" />
     <Compile Include="Tasks\Apprentice_Activities.py" />
   </ItemGroup>
   <ItemGroup>

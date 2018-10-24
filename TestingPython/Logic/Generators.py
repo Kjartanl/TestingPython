@@ -1,6 +1,7 @@
 
 # Generators - the Python equivalent of the C# Yield keyword?
-# Quote: "Simply speaking, a generator is a function that returns an object (iterator) which we can iterate over (one value at a time)."
+# Quote: "Simply speaking, a generator is a function that returns an object (iterator) 
+# which we can iterate over (one value at a time)."
 # (In short: Yield temporarily cedes flow to caller; will continue 
 # from after that same yield statement next time the generator is called). 
 
