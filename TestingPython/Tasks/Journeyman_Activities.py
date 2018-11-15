@@ -36,9 +36,12 @@ def get_next_sum(target):
     sum += nr
     print("(Final yield for numbers <= %s. Final sum: %s)"  % (target, sum))
     yield sum 
+
+pint = get_next_sum(5)
+print(pint)
     
 
-# Alternative implementation:
+### Alternative implementation:
 def get_sum_up_to(target):
     print("Sum up to %s: %s" %(target, sum(get_numbers_up_to(target))))
 
@@ -49,9 +52,27 @@ def get_numbers_up_to(target):
         nr += 1
 
 
-pint = get_next_sum(5)
+##############
+### TASK 3 ###
+##############
 
-print(pint)
+# Create a client that connects to a running instance of the 
+# simple StringServer (found under "Networking").
+
+def query_server(): 
+    import socket
+    clientSock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    conn_data = ('127.0.0.1', 50002)    
+    clientSock.connect(conn_data)
+
+    received_String = clientSock.recv(32)
+
+    msg = input("Message?") 
+    while msg != '':
+        clientSock.send(msg.encode('utf8'))
+        msg = input("Next message?")
+
+    clientSock.close()
 
 
 ###############
@@ -87,8 +108,8 @@ elif(task_to_run == 2):
        get_sum_up_to(5) 
     
 elif(task_to_run == 3):
-    print("Not implemented yet...")
-    
+    query_server()
+
 elif(task_to_run == 4):
     print("Not implemented  yet...")
 else:

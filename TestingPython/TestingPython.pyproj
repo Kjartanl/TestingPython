@@ -47,6 +47,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Networking\Networking_Client.py" />
+    <Compile Include="Networking\String_server.py" />
     <Compile Include="Networking\Networking_server.py" />
     <Compile Include="Programs\ProgramWithMenu\functions.py" />
     <Compile Include="Programs\ProgramWithMenu\menu_based_program.py">
