@@ -1,4 +1,6 @@
 
+import socket
+
 ##############
 ### TASK 1 ###
 ##############
@@ -60,12 +62,13 @@ def get_numbers_up_to(target):
 # simple StringServer (found under "Networking").
 
 def query_server(): 
-    import socket
     clientSock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     conn_data = ('127.0.0.1', 50002)    
     clientSock.connect(conn_data)
 
-    received_String = clientSock.recv(32)
+    received_string = clientSock.recv(1024)
+    
+    print("Output: %s" %received_string)
 
     msg = input("Message?") 
     while msg != '':
@@ -73,6 +76,28 @@ def query_server():
         msg = input("Next message?")
 
     clientSock.close()
+
+
+     
+##############
+### TASK 4 ###
+##############
+def person_populator():
+    class Person:
+        def __init__(self = 0, height = 0, weight = 0, hair = '', eyes = ''):
+            self.height = height
+            self.weight = weight
+            self.hair = hair
+            self.eyes = eyes
+
+        def print_self(self):
+            print("Height: %d\nWeight: \t%d\nHair: \t%s \nEyes: \t%s" % (self.height, self.weight, self.hair, self.eyes))
+
+    pers1 = Person(172, 65, 'brown', 'blue')
+
+    pers1.print_self()
+
+    return
 
 
 ###############
@@ -111,7 +136,7 @@ elif(task_to_run == 3):
     query_server()
 
 elif(task_to_run == 4):
-    print("Not implemented  yet...")
+    person_populator()
 else:
     print("Invalid task selected.")
 

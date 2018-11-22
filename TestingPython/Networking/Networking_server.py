@@ -14,7 +14,6 @@ def run_server():
 
     print("Sock is now ready: %s" %serverSock)
 
-
     # Listen for connections
     serverSock.listen(3) # Accept up to 3 clients to connect at once
 
@@ -33,6 +32,8 @@ def run_server():
 
     # Print the data received:
     input("Received empty - done!")
+
+    connSock.close()
 
 
 run_server()

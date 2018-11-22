@@ -9,26 +9,18 @@ def main():
     PORT = 50002
     message_list = ['alpha', 'beta', 'gamma', 'delta', 'iota', 'cappa', 'lambda']
 
-    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    sock.bind((HOST, PORT))
-
     for msg in message_list:
+        print(msg)
 
-        print("Waiting for a connection..")
-        sock.listen(5)
-        print("Found something?")
-
-        conn, adr = sock.accept()
-        received_msg = conn.recv(16)
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        sock.bind((HOST, PORT))
         
-        print("Received: %s" % received_msg)
+        print("about to listen..")
+        sock.listen(1)
+        conn, adr = sock.accept()
 
-        print("Sending: %s" % msg)
-        sock.send(msg.encode("utf8"))
-
-
+        conn.send(msg.encode("utf8"))
         conn.close()
-
 main()
 
 
