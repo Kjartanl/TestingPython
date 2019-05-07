@@ -24,6 +24,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="CoreFunctionality\__run_module.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="CoreFunctionality\Classes.py" />
     <Compile Include="CoreFunctionality\Lambdas.py" />
     <Compile Include="CoreFunctionality\Command_line_args.py" />
