@@ -44,11 +44,13 @@
     <Compile Include="CoreFunctionality\print_format.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DataStructures\__run_module.py" />
     <Compile Include="Logic\For_loops.py" />
     <Compile Include="Logic\basic_logic.py" />
     <Compile Include="Logic\Generators.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Logic\__run_module.py" />
     <Compile Include="Networking\Networking_Client.py" />
     <Compile Include="Networking\String_server.py" />
     <Compile Include="Networking\Networking_server.py" />

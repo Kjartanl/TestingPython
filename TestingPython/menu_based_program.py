@@ -28,12 +28,16 @@ def display_sub_menu(disp_list, run_list):
 
     try:
         selected_option = int(inputValue)
-        print(selected_option)
-
         selected_option -= 1
+
+        print("-----------------------------")
+        print(f"Running: {disp_list[selected_option]}")
+        print("-----------------------------")
+
             
         if selected_option <= len(run_list):
             run_list[selected_option]()
+        input("Click any key to return.") 
     except ValueError:
         print("Invalid option selected.")
 
@@ -41,6 +45,16 @@ def display_sub_menu(disp_list, run_list):
 def run_core_functionality():
     from CoreFunctionality import __run_module as corefun
     display_sub_menu(corefun.get_display_list(), corefun.get_run_list())
+    
+def run_data_structures():
+    from DataStructures import __run_module as dstructs
+    display_sub_menu(dstructs.get_display_list(), dstructs.get_run_list())
+
+def run_logic():
+    from Logic import __run_module as logic
+    display_sub_menu(logic.get_display_list(), logic.get_run_list())
+
+
 
 def main(): # Menu goes here
     list_options = [fn.accept_and_store, 
@@ -54,7 +68,9 @@ def main(): # Menu goes here
                     run_lists, 
                     run_list_comprehensions, 
                     run_dictionaries_code, 
-                    run_core_functionality]
+                    run_core_functionality, 
+                    run_data_structures, 
+                    run_logic]
 
 
     while(True):
@@ -75,8 +91,13 @@ def main(): # Menu goes here
         print("  9. Lists")
         print("  10. List comprehensions")
         print("  11. Dictionaries")
-        print("------")
-        print("  12: Sub-menu")
+        print("---------------------")
+        print("-----SUB-MENUES -----")
+        print("---------------------")
+        print("  12: Core Functionality")
+        print("  13: Data Structures")
+        print("  14: Logic, loops, etc")
+
         print("'Q': QUIT")
         print("------")
 
@@ -87,7 +108,9 @@ def main(): # Menu goes here
 
         try:
             selected_option = int(inputValue)
-            print(selected_option)
+            print("-----------------------------")
+            print(f"Running: {selected_option}")
+            print("-----------------------------")
 
             selected_option -= 1
             

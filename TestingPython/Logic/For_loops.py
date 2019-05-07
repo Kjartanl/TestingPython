@@ -18,3 +18,15 @@ for word in list_of_stuff:
     print(word, end='\t')
 
 
+print("\nFor loop with an ELSE-structure:")
+
+for item in ["one", "two", "three", "four"]:
+    if item == "five":
+        print("Found 'five'")
+        break
+else:
+    print("This list does not contain 'five'")
+
+
+
+
