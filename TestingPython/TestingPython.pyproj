@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>0efdb2a2-abf1-4a91-86e3-f5b47c11399b</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Tasks\Journeyman_Activities.py</StartupFile>
+    <StartupFile>menu_based_program.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -50,7 +50,7 @@
     <Compile Include="Networking\String_server.py" />
     <Compile Include="Networking\Networking_server.py" />
     <Compile Include="Programs\ProgramWithMenu\functions.py" />
-    <Compile Include="Programs\ProgramWithMenu\menu_based_program.py">
+    <Compile Include="menu_based_program.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="System\system_calls.py">
