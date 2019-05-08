@@ -42,6 +42,11 @@ def display_sub_menu(disp_list, run_list):
         print("Invalid option selected.")
 
 
+def run_functions():
+    from Programs.ProgramWithMenu import __run_module as functions
+    display_sub_menu(functions.get_display_list(), functions.get_run_list())
+    
+
 def run_core_functionality():
     from CoreFunctionality import __run_module as corefun
     display_sub_menu(corefun.get_display_list(), corefun.get_run_list())
@@ -57,17 +62,7 @@ def run_logic():
 
 
 def main(): # Menu goes here
-    list_options = [fn.accept_and_store, 
-                    fn.print_string, 
-                    fn.compare_numbers,
-                    fn.calculator, 
-                    fn.remove_letter, 
-                    run_for_loops, 
-                    run_basic_logic, 
-                    run_generators, 
-                    run_lists, 
-                    run_list_comprehensions, 
-                    run_dictionaries_code, 
+    list_options = [run_functions, 
                     run_core_functionality, 
                     run_data_structures, 
                     run_logic]
@@ -78,25 +73,10 @@ def main(): # Menu goes here
         print("------------------------")
         print("SELECT OPTION:")
         print("------------------------")
-        print("Code with IO")
-        print("  1. Accept and store string")
-        print("  2. Print string")
-        print("  3. Compare numbers")
-        print("  4. Calculate")
-        print("  5. Remove letter")        
-        print("Simpler functions:")
-        print("  6. For Loops code")
-        print("  7. Basic Logic")
-        print("  8. Generators code")
-        print("  9. Lists")
-        print("  10. List comprehensions")
-        print("  11. Dictionaries")
-        print("---------------------")
-        print("-----SUB-MENUES -----")
-        print("---------------------")
-        print("  12: Core Functionality")
-        print("  13: Data Structures")
-        print("  14: Logic, loops, etc")
+        print("1. Functions")
+        print("2: Core Functionality")
+        print("3: Data Structures")
+        print("4: Logic, loops, etc")
 
         print("'Q': QUIT")
         print("------")
