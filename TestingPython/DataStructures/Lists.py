@@ -46,5 +46,24 @@ another_list = string_list[3:4] + string_list[10:11] + string_list[6:8] + string
 
 # ['hackers', 'composed', 'awsome', 'code', 'with', 'clarity', 'and', 'ease']
 print(another_list)
-print(another_list[:1] * 3) # ['hackers', 'hackers', 'hackers']
+
+# ['hackers', 'hackers', 'hackers']
+print(another_list[:1] * 3) 
+
+#Stepping backwards through a list:
+backwards_list = ["six", "five", "four", "three", "two", "one", "zero"]
+
+#Step from pos 4 (after final element!) to 0, stepping -1 at at time:
+print(f"Backwards: {backwards_list[4:0:-1]}")
+
+# the step-indicator can also be used to skip elements:
+print(f"Every other element: {backwards_list[0:6:2]}")
+
+#...or to print the whole list in reverse order, if the first two parameters are not included:
+print(f"The whole list backwards: {backwards_list[::-1]}")
+
+# Same as previous, but only including every other element:
+print(f"The whole list backwards: {backwards_list[::-2]}")
+
+
 

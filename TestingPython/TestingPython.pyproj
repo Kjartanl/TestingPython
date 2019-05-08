@@ -58,6 +58,7 @@
     <Compile Include="menu_based_program.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Programs\ProgramWithMenu\__run_module.py" />
     <Compile Include="System\system_calls.py">
       <SubType>Code</SubType>
     </Compile>

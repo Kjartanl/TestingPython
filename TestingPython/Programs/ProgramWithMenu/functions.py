@@ -10,7 +10,7 @@ def calculator(): # Add, sub, multiply, divide
     print("Running Calculator!")
     nr1 = int(input("First Nr? "))
     nr2 = int(input("Second nr? "))
-    operation = input("Operation? ")
+    operation = input("Operation? (+, -, *, or /)")
 
     # Ref. to functions for maths-operations:
     signs = {'+': operator.add, '-': operator.sub, '*': operator.mul, '/': operator.sub }
@@ -22,7 +22,7 @@ def calculator(): # Add, sub, multiply, divide
     # Call the referenced function:
     result = signs[operation](nr1,  nr2)
 
-    print("nr %d %s %d = %d" %(nr1, operation, nr2, result))
+    print(f"nr {nr1} {operation} {nr2} = {result}")
 
     return
 
