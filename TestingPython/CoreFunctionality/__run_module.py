@@ -17,13 +17,17 @@ def run_Lambdas():
 def run_Print_format():
     from CoreFunctionality import print_format
 
+def run_numbers():
+    from CoreFunctionality import numbers
+
 def get_run_list():
     return [run_classes, 
             run_command_line_args, 
             run_Exceptions, 
             run_FileIo, 
             run_Lambdas, 
-            run_Print_format]
+            run_Print_format, 
+            run_numbers]
 
 def get_display_list():
     return ["  1. Classes", 
@@ -31,4 +35,5 @@ def get_display_list():
             "  3. Exceptions", 
             "  4. File IO", 
             "  5. Lambdas", 
-            "  6. Print formatting"]
+            "  6. Print formatting", 
+            "  7. Numbers"]
