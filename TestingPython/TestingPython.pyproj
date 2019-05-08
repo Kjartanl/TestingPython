@@ -24,6 +24,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="CoreFunctionality\numbers.py" />
     <Compile Include="CoreFunctionality\__run_module.py">
       <SubType>Code</SubType>
     </Compile>
