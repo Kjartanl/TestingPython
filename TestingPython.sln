@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2026
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "TestingPython", "TestingPython\TestingPython.pyproj", "{0EFDB2A2-ABF1-4A91-86E3-F5B47C11399B}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Calendar", "Calendar\Calendar.pyproj", "{D456E7F0-FC2C-4A1F-8540-7E706DB09538}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +15,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{0EFDB2A2-ABF1-4A91-86E3-F5B47C11399B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0EFDB2A2-ABF1-4A91-86E3-F5B47C11399B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D456E7F0-FC2C-4A1F-8540-7E706DB09538}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D456E7F0-FC2C-4A1F-8540-7E706DB09538}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
